@@ -1,0 +1,7 @@
+--- qxmpp.pro	2011-06-04 20:19:57.000000000 +0300
++++ qxmpp.pro	2011-06-06 00:06:09.751272301 +0300
+@@ -28,4 +28,3 @@
+ htmldocs.CONFIG += no_check_exist directory
+ 
+ QMAKE_EXTRA_TARGETS += dist docs
+-INSTALLS += htmldocs
