@@ -1,6 +1,6 @@
 Name:       qxmpp
 Version:    0.3.44
-Release:    0.1.pre21062011%{?dist}
+Release:    0.1.pre21062011%{?dist}.R
 License:    LGPLv2+
 Source:     https://github.com/downloads/0xd34df00d/qxmpp-dev/qxmpp-0.3.44-extras.tar.bz2
 Patch:      qxmpp.patch
