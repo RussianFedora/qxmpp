@@ -7,9 +7,11 @@ Patch:      qxmpp.patch
 Group:      Development/Libraries
 Summary:    Qt XMPP library
 URL:        http://github.com/0xd34df00d/qxmpp-dev 
+
 BuildRequires:  gcc-c++
 BuildRequires:  qt-devel
- 
+BuildRequires:  speex-devel
+
 %description
 QXmpp is a cross-platform C++ XMPP client library. It is based on Qt and C++.
 
