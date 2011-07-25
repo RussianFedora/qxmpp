@@ -1,8 +1,8 @@
 Name:       qxmpp
-Version:    0.3.44
-Release:    0.1.pre21062011%{?dist}.R
+Version:    0.3.45.1
+Release:    0.1%{?dist}.R
 License:    LGPLv2+
-Source:     https://github.com/downloads/0xd34df00d/qxmpp-dev/qxmpp-0.3.44-extras.tar.bz2
+Source:     https://github.com/downloads/0xd34df00d/qxmpp-dev/%{name}-%{version}-extras.tar.bz2
 Patch:      qxmpp.patch
 Group:      Development/Libraries
 Summary:    Qt XMPP library
@@ -33,16 +33,18 @@ make %{?_smp_mflags}
 %install
 make install INSTALL_ROOT=%{buildroot}
 %ifarch x86_64
-%__mv %{buildroot}/usr/lib %{buildroot}/usr/lib64
+%__mv %{buildroot}/usr/{lib,lib64}
 %endif
  
 %files 
 %defattr(-,root,root,-)
 %doc AUTHORS CHANGELOG LICENSE.LGPL README
-%{_libdir}/libqxmpp.a
+%{_libdir}/lib%{name}.a
 %{_includedir}/%{name}
 %{_libdir}/pkgconfig/%{name}.pc
  
 %changelog
+* Mon Jul 25 2011 Minh Ngo <nlminhtl@gmail.com> 0.3.45.1
+- new version
 * Mon Jun 06 2011 Minh Ngo <nlminhtl@gmail.com> 0.3.44-0.1.pre21062011
 - initial build 
